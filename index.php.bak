@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Chandler Renteteria Portfolio</title>
+		<link rel="stylesheet" href="CSS/Style.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+		<script src="https://kit.fontawesome.com/46da648e7e.js" crossorigin="anonymous"></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head>
+    <body>
+	<!-- COVER SECTION -->
+		<div class="container-fluid" id="cover">
+		<!-- NAVIGATION -->
+			<div class="d-flex justify-content-center">
+				<nav class="navbar navbar-expand-sm  d-flex justify-content-evenly">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon">
+							<i class="fa-solid fa-burger align-middle"></i>
+						</span>
+					</button>
+					<div class="collapse navbar-collapse">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link rounded-pill text-custom-gray neumorphicActive" href="#portfolio">Portfolio</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link rounded-pill text-custom-gray neumorphicDefault" href="#about">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link rounded-pill text-custom-gray neumorphicDefault" href="#projects">Gallery</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link rounded-pill text-custom-gray neumorphicDefault" href="#contact">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			
+			<!-- WELCOME SECTION -->
+			<div class=" welcomeSection">
+				<div class="row d-flex align-items-center">
+					<div class="col-lg-8 ">
+						<div class="welcomeText d-flex justify-content-center">
+							<div class="text-custom-gray m-1"> Hello, I am <span id="nameSpan">Chandler Renteria</span><br> Full-Stack Developer</div>
+							
+						</div>
+						<div class="row welcomeLinks d-flex justify-content-center">
+							<a  class="rounded-pill col-md-4 text-custom-gray neumorphicDefault" href="#portfolio">Portfolio</a>
+							<a  class="rounded-pill  col-md-4 text-custom-gray neumorphicDefault" href="#contact">Contact</a>	
+						</div>	
+					</div>
+					<img class="col-lg-4 mt-5 welcomeGraphic" src="Images/welcome_graphic.svg"></img>
+				</div>
+			</div>
+		</div>
+		
+		<!-- About Section Start-->
+		<div class="row mt-md-1 p-md-1 d-flex align-items-center justify-content-center" id="about">
+			<div class="col-lg-7">
+				<h1 class="sectionTitle">About</h1>
+				<p class="about_description">When Covid-19 caused worldwide lockdowns in April my business took a big hit, losing about 80% of total revenue in a month. It was then that I decided to take that hobby I enjoyed so much and take it seriously. I immediately enrolled in Salt Lake Community College studying web development and design. With my background in python and teaching myself coding concepts I was able to excel in everything from HTML to PHP and MySQL.</p> 
+			</div>
+			<img class="col-lg-4 mt-1 aboutGraphic" src="Images/undraw_dev.svg"></img>
+			<div class="row aboutLink d-flex justify-content-center">
+				<a class="rounded-pill col-md-4 text-custom-gray neumorphicDefault" href="resume.pdf" download="Chandler Renteria Resume" target="blank">Resume</a>
+			</div>
+		</div>
+		<!-- Portfolio Section Start -->
+		<div class="" id="portfolio">
+			<div class="d-inline-flex justify-content-center">
+				<h2 class="sectionTitle ">Portfolio</h2>
+				<div class="btnContainer">
+					<button type="button" id="html_css" class="filter_Select text-custom-gray rounded-pill neumorphicDefault" onclick="filterSelection('.html_css')">HTML & CSS</button>
+					<button type="button" id="python" class="filter_Select text-custom-gray rounded-pill neumorphicDefault" onclick="filterSelection('.python')">Python</button>
+					<button type="button" id="javascript" class="filter_Select text-custom-gray rounded-pill neumorphicDefault" onclick="filterSelection('.javascript')">Javascript</button>
+					<button type="button" id="php_mysql" class="filter_Select text-custom-gray rounded-pill neumorphicDefault" onclick="filterSelection('.php_mysql')">PHP & MySQL</button>
+					<button type="button" id="filterDiv" class="filter_Select text-custom-gray rounded-pill neumorphicDefault" onclick="filterSelection('.filterDiv')">All</button>
+				</div>
+				<div class="row projects justify-content-center">
+					<div class="card col-lg-3 neumorphicDefault align-top filterDiv html_css javascript php_mysql">
+						<img class="card-img-top" src="Images/images/ecommerceSite.JPG" alt="Project Placeholder">
+						<div class="card-body">
+						  <h4 class="card-title text-dark">Ecommerce Site</h4>
+						  <p class="card-text text-dark">An eccommerce site with fully custom code and no components.<br></p>
+						  <ul class="list-group list-group-flush">
+							  <li class="list-group-item">HTML/CSS</li>
+							  <li class="list-group-item">Real-Time JS Validation</li>
+							  <li class="list-group-item">PHP/MySql</li>
+						  </ul>
+						  <a target="_blank" href="http://renteriac.infinityfreeapp.com/catalog/" class="btn btn-success border-0 project_link bg-custom">See Project</a>
+						  <!-- <a href="" class="btn btn-success border-0 project_link bg-custom">See Code</a>-->
+						</div>
+					</div>
+					<div class="card col-lg-3 neumorphicDefault align-top filterDiv html_css javascript php_mysql">
+						<img class="card-img-top" src="Images/images/diastic.JPG" alt="Project Placeholder">
+						<div class="card-body">
+						  <h4 class="card-title text-dark">Diastic Machine</h4>
+						  <p class="card-text text-dark">Generates Diastic Poems based off a seed phrase.<br></p>
+						  <ul class="list-group list-group-flush">
+							  <li class="list-group-item">HTML/CSS</li>
+							  <li class="list-group-item">Real-Time JS Validation</li>
+							  <li class="list-group-item">PHP/MySql</li>
+						  </ul>
+						  <a target="_blank" href="http://renteriac.infinityfreeapp.com/diastic/" class="btn btn-success border-0 project_link bg-custom">See Project</a>
+						</div>
+					</div>
+					<div class="card col-lg-3 neumorphicDefault align-top filterDiv html_css javascript php_mysql">
+						<img class="card-img-top" src="Images/images/portfolio-site-thumbnail.PNG" alt="Project Thumbnail">
+						<div class="card-body">
+						  <h4 class="card-title text-dark">Portfolio Website</h4>
+						  <p class="card-text text-dark">Yes, the very site you are viewing. <br></p>
+						  <ul class="list-group list-group-flush">
+							<li class="list-group-item">HTML & CSS</li>
+							<li class="list-group-item">Javascript</li>
+							<li class="list-group-item">PHP</li>
+						  </ul>
+						  <!--<a href="#" class="btn btn-success border-0 project_link bg-custom">See Project</a>-->
+						  <a  target="_blank" href="https://github.com/cdrenteria/PortfolioWebsite" class="btn btn-success border-0 project_link bg-custom">See Code</a>
+						</div>
+					</div>
+					<div class="card col-lg-4 neumorphicDefault align-top filterDiv html_css javascript">
+						<img class="card-img-top" src="Images/images/livlifestyle.JPG" alt="Project Thumbnail">
+						<div class="card-body">
+						  <h4 class="card-title text-dark">LivLifestyle Design</h4>
+						  <p class="card-text text-dark"> An ecommerce site for an Interior Design Studio. <br></p>
+						  <ul class="list-group list-group-flush">
+							<li class="list-group-item">WordPress</li>
+							<li class="list-group-item">Elementor</li>
+							<li class="list-group-item">HTML/CSS</li>
+						  </ul>
+						  <!--<a href="#" class="btn btn-success border-0 project_link bg-custom">See Project</a>-->
+						  <a  target="_blank" href="https://www.livlifestyleco.com/" class="btn btn-success border-0 project_link bg-custom">See Project</a>
+						</div>          
+					</div>
+					<div class="card col-lg-4 neumorphicDefault align-top filterDiv html_css javascript">
+						<img class="card-img-top" src="Images/images/cleanbnb-site-thumbnail.PNG" alt="Project Thumbnail">
+						<div class="card-body">
+						  <h4 class="card-title text-dark">Cleanbnb Website</h4>
+						  <p class="card-text text-dark">Get info, make requests, and more. <br></p>
+						  <ul class="list-group list-group-flush">
+							<li class="list-group-item">WordPress</li>
+							<li class="list-group-item">Javascript</li>
+							<li class="list-group-item">HTML/CSS</li>
+						  </ul>
+						  <!--<a href="#" class="btn btn-success border-0 project_link bg-custom">See Project</a>-->
+						  <a  target="_blank" href="https://github.com/cdrenteria/Cleanbnb" class="btn btn-success border-0 project_link bg-custom">See Code</a>
+						</div>          
+					</div>
+					<div class="card col-lg-4 neumorphicDefault align-top filterDiv javascript">
+					  <img class="card-img-top" src="Images/images/blackjack-thumbnail.PNG" alt="Project Thumbnail">
+					  <div class="card-body">
+						<h4 class="card-title text-dark">Java Calculator</h4>
+						<p class="card-text text-dark">A fully function desktop calulator application</p>
+						<ul class="list-group list-group-flush">
+						  <li class="list-group-item">SWING GUI</li>
+						  <li class="list-group-item">Percent Hanlding</li>
+						  <li class="list-group-item">Decimal Handling</li>
+						</ul>
+						<!--<a href="#" class="btn btn-success border-0 project_link bg-custom">See Project</a>-->
+						<a  target="_blank" href="https://github.com/cdrenteria/CalculatorProject" class="btn btn-success border-0 project_link bg-custom">See Code</a>
+					  </div>          
+				  </div>
+					
+					<div class="card col-lg-4 neumorphicDefault align-top filterDiv html_css javascript">
+						<img class="card-img-top" src="Images/images/stanStor.JPG" alt="Project Placeholder">
+						<div class="card-body">
+						  <h4 class="card-title text-dark">Stansbury Storage</h4>
+						  <p class="card-text text-dark">Designed and built out for a local business. <br></p>
+						 <ul class="list-group list-group-flush">
+						  <li class="list-group-item">HTML/CSS</li>
+						  <li class="list-group-item">JQuery</li>
+						  <li class="list-group-item">Javascript</li>
+						</ul>
+						  <a target="_blank" href="http://stansburyparkstorage.com/" class="btn btn-success border-0 project_link bg-custom">See Project</a>
+						  <a target="_blank" href="https://github.com/cdrenteria/StansburyStorage" class="btn btn-success border-0 project_link bg-custom">See Code</a>
+						</div>
+					</div>
+					 
+					<div class="card col-lg-4 neumorphicDefault align-top filterDiv python">
+					  <img class="card-img-top" src="Images/images/blackjack-thumbnail.PNG" alt="Project Thumbnail">
+					  <div class="card-body">
+						<h4 class="card-title text-dark">Console Blackjack</h4>
+						<p class="card-text text-dark">A simple game of blackjack played in your console. <br></p>
+						<ul class="list-group list-group-flush">
+						  <li class="list-group-item">Python</li>
+						  <li class="list-group-item">OOP Concepts</li>
+						  <li class="list-group-item">Windows Console</li>
+						</ul>
+					   <!-- <a href="#" class="btn btn-success border-0 project_link bg-custom">See Project</a>-->
+						<a target="_blank" href="https://github.com/cdrenteria/blackjack" class="btn btn-success border-0 project_link bg-custom">See Code</a>
+					  </div>
+				  </div>
+					
+				</div>
+			</div>
+		</div>
+		<div id="contact"></div>
+    </body>
+</html>

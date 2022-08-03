@@ -1,0 +1,146 @@
+html, 
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+	background-color: #ecf0f3;
+}
+
+.navbar-toggler-icon{
+	background-image: url("")!important;
+	width: 100%;
+	height: 100%;
+}
+.nav-link {
+	text-align:center;
+}
+
+.navigation {
+	background-color: #ecf0f3;
+	font-size: 2.5vw;
+	font-family: Garamond;
+}
+.neumorphicDefault {
+	background-color: transparent;
+	box-shadow:  0.5rem 0.5rem 1rem #d1d9e6,
+				 -0.5rem -0.5rem 1rem #ffffff;
+	text-decoration: none;
+	margin: 1rem;
+	padding:1rem;
+	text-align: center;
+}
+
+.neumorphicActive {
+	background-color: transparent;
+	box-shadow:  inset 5px 5px 10px #d1d9e6,
+				 inset -5px -5px 10px #ffffff;
+	text-decoration: none;	
+	margin: 1rem;
+	padding: 1rem;
+}
+
+#cover, #about, #portfolio {
+	min-height: 100vh;
+	font-size: 3.5vh;
+	font-family: Garamond;
+	color: #646464;
+}
+
+.text-custom-gray {
+	color: #646464;
+}
+
+.welcomeGraphic{
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	min-width: 320px;
+}
+
+.aboutGraphic{	
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: block;
+	max-height: 35vh;
+}
+
+.welcomeSection {
+	margin-top: 24vh;
+
+}
+
+.welcomeText {
+	  font-size: 5.5vh;
+  }
+
+#nameSpan, .skillCard i {
+	color: #6B63FF;
+}
+
+.fa-burger {
+	color: #274156l;
+}
+
+.sectionTitle {
+	font-size: 5.5vh;
+}
+
+
+.btnContainer button.filter_Select {
+	border: none;
+	outline: none;
+}
+
+.aboutLink a{
+	font-size:3.5vh;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width: 1025px) {
+
+
+	.welcomeSection {
+	margin-left: 0px;
+	margin-right:0px;
+	}
+
+}
+
+@media only screen and (max-width: 769px) {
+
+	.fa-burger, .navbar-toggler-icon {
+	   font-size: 10.5vw;
+	}
+
+	.welcomeSection {
+	margin-top: 11vh;
+	}
+
+	.welcomeText {
+	  font-size: 4.5vh;
+	}
+
+	
+}
+
+@media only screen and (max-width: 576px) {
+
+	.aboutLink a{
+		margin-left: 0;
+	}
+	
+	.welcomeLinks a {
+		margin: 1vw auto;
+	}
+
+	.neumorphicDefault {
+	padding:.5rem;
+	}
+
+	#about p{
+		font-size: 2vh;
+	}
+}
